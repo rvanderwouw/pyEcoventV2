@@ -10,6 +10,8 @@ fan=Fan("<broadcast>", "1111" , "DEFAULT_DEVICEID" )
 ips = fan.search_devices('0.0.0.0')
 print ( ips ) 
 
+# ips=["10.94.0.106"]
+
 for addr in ips:
     print ( addr ) 
     fan=Fan(addr, "1111" , "DEFAULT_DEVICEID" )

@@ -61,3 +61,5 @@ Fans from Flexit are identical and should work, but this is not yet tested:
 ## Changelog
 - v 0.9.9.
 -- initialize _battery_voltage with 0 not None
+- v 0.9.16
+-- fix undocumented boost_status 2 (delay switching on state)

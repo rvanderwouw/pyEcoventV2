@@ -44,6 +44,12 @@ class Fan(object):
         0: 'off', 
         1: 'on' 
     }
+    
+    boost_statuses = {
+        0: 'off', 
+        1: 'on',
+        2: 'delay'
+    }    
 
     airflows = {
         0: 'ventilation',
@@ -545,7 +551,7 @@ class Fan(object):
     @boost_status.setter
     def boost_status(self, input):
         val = int (input, 16 )
-        self._boost_status = self.statuses[val]
+        self._boost_status = self.boost_statuses[val]
 
     @property
     def timer_mode(self):
